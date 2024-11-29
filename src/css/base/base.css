@@ -5,3 +5,23 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body{
+    background: #3c2474;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+strong{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 900;
+}
+em{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 100;
+}

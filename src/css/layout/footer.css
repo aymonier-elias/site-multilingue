@@ -1,4 +1,4 @@
-.header{
+.footer{
     background-color: #272725;
     color: #fff;
     padding: 10px 30px;
@@ -6,13 +6,5 @@
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;
-    a{
-        text-decoration: none;
-        color: #fff;
-    }
-}
-
-.header__link-lang{
-    font-size: 1.75rem;
+    bottom: 0;
 }
