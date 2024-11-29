@@ -5,8 +5,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
     a{
         text-decoration: none;
         color: #fff;
@@ -15,4 +13,57 @@
 
 .header__link-lang{
     font-size: 1.75rem;
+}
+
+.menu__btn{
+    position: relative;
+    z-index: 2;
+    height: 40px;
+    width: 30px;
+    background: none;
+    border: none;
+}
+
+.menu__btn-bar,
+.menu__btn-bar::before,
+.menu__btn-bar::after {
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 10px;
+    transition: .5s ease;
+}
+.menu__btn-bar::before{
+    top: -10px;
+    width: 100%;
+}
+.menu__btn-bar::after {
+    top: 10px;
+    width: 100%;
+}
+
+.menu__btn[aria-expanded = true] .menu__btn-bar{
+    background-color: beige;
+}
+.menu__btn[aria-expanded = true] .menu__btn-bar::before,
+.menu__btn[aria-expanded = true] .menu__btn-bar::after {
+    content: "";
+    background-color: #272725;
+    position: absolute;
+    left: 0;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.menu__btn[aria-expanded = true] .menu__btn-bar::after{
+    transform: rotate(405deg);
+    top: 0;
+}
+.menu__btn[aria-expanded = true] .menu__btn-bar::before{
+    transform: rotate(-405deg);
+    top: 0;
 }

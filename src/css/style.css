@@ -5,6 +5,7 @@
 
 /* Components */
 @import "components/articles.css";
+@import "components/menu.css";
 
 /* Layout */
 @import "layout/header.css";
