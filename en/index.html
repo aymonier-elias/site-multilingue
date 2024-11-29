@@ -12,6 +12,22 @@
     <header class="header">
         <h1 class="header__title">Welcome to my Multilingual website</h1>
         <a class="header__link-lang" href="../fr/" onclick="document.cookie = `nf_lang=fr; path=/ ; SameSite=Strict`"><strong>En</strong> | Fr</a>
+        <button class="header__btn menu__btn"
+        aria-expanded="false">
+            <span class="menu__btn-bar"></span>
+        </button>
+        <nav class="header__menu menu" aria-hidden="true">
+            <h1>I just wanted to make a menu since I was so early</h1>
+            <ul>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+                <li><p>No Link</p></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="main">
@@ -56,5 +72,7 @@
     <footer class="footer">
         <h3>My footer</h3>
     </footer>
+
+    <script src="/src/js/script.js"></script>
 </body>
 </html>
